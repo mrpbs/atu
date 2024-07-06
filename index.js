@@ -4,8 +4,15 @@ const { pathfinder, Movements, goals} = require('mineflayer-pathfinder')
 const armorManager = require('mineflayer-armor-manager')
 //const mc = require('minecraft-protocol');
 const AutoAuth = require('mineflayer-auto-auth');
-//const app = express();
+const express = require("express");
+const app = express();
 //const mineflayerViewer = require('prismarine-viewer').mineflayer
+
+app.use(express.json());
+app.get("/", (_, res) => res.send("hmm"))
+app.listen(8080);
+
+
 async function createBot(){
 
 const bot = mineflayer.createBot({
