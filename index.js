@@ -10,7 +10,7 @@ async function createBot(){
 
 const bot = mineflayer.createBot({
   //host: "1234Mahamed.aternos.me",//
-   host: "CricketGabru.aternos.me", 
+   host: "", 
   version: false, // U can replace with 1.16.5 for example, remember to use ', = '1.16.5'
   username: 'ChowkidarXD', 
  // port: 40568,//
